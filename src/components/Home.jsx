@@ -67,7 +67,7 @@ const Home = () => {
           price={i.current_price}
           marketcap={i.market_cap}
           change={i.price_change_percentage_24h}
-          />
+          /> 
         ))}
         </tbody>
         </table>
