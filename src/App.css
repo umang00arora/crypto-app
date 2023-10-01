@@ -37,13 +37,36 @@
 }
 
 .coin-row :hover{
-  background-color: rgb(248, 224, 224);
+  background-color: black;
 }
 
 .table-row {
   display: table-row
 }
 
+.coinTable::-webkit-scrollbar{
+  display: none;
+}
+
+.coinDet{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  border-right: 2px solid grey;
+}
+
+.selectbutton :hover{ 
+  background-color: gold;
+  color: black;
+}
 
 @keyframes App-logo-spin {
   from {

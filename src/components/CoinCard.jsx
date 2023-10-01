@@ -11,7 +11,7 @@ const CoinCard = ({image, name, price, change, marketcap, id}) => {
   const history = useNavigate()
   return (
     <>
-    <tr style={{height: "70px" , fontSize: "large"}} onClick={()=>history(`/coins/${id}`)}>
+    <tr style={{height: "70px" , fontSize: "large", borderBottom: "2px solid grey"}} onClick={()=>history(`/coins/${id}`)}>
       <td>
       <img src={image} alt="" height={40} width={40}/>
       </td>
@@ -23,7 +23,7 @@ const CoinCard = ({image, name, price, change, marketcap, id}) => {
 
       </td>
       <td>
-      <span style={{color: profit > 0 ? "rgb(14, 203, 129)" : "red", fontWeight: 500,}}>{profit && "+"} {change.toFixed(2)} %</span>
+      <span style={{color: profit > 0 ? "rgb(14, 203, 129)" : "red", fontWeight: 500,}}>{profit && "+"}{change.toFixed(2)} %</span>
       </td>
       <td>
       ₹ {numberWithCommas(marketcap.toString().slice(0, -6))} M
